@@ -788,7 +788,7 @@ static char UIScrollViewInternalPullToRefreshViews;
             break;
         case SVPullToRefreshPositionRight:
             if(!self.wasTriggeredByUser)
-                [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentSize.width - self.scrollView.bounds.size.width + self.originalRightInset, self.scrollView.contentOffset.y) animated:YES];
+                [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentSize.width - self.scrollView.bounds.size.width, self.scrollView.contentOffset.y) animated:YES];
             break;
     }
 }
